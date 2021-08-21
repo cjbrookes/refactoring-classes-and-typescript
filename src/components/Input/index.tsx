@@ -8,6 +8,13 @@ import {
 import { useField } from '@unform/core';
 
 import { Container } from './styles';
+import { IconType } from 'react-icons';
+
+interface InputProps {
+  name: string
+  icon?: IconType  
+  placeholder: string
+}
 
 const Input = ({ name, icon: Icon, ...rest }) => {
   const inputRef = useRef(null);
