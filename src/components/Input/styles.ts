@@ -26,14 +26,14 @@ export const Container = styled.div<ContainerProps>`
     line-height: 36px;
   }
 
-  ${props =>
+  ${(props: { isFocused: any; }) =>
     props.isFocused &&
     css`
       color: #ff9000;
       border-color: #ff9000;
     `}
 
-  ${props =>
+  ${(props: { isFilled: any; }) =>
     props.isFilled &&
     css`
       color: #ff9000;
